@@ -1,0 +1,48 @@
+/*The loader*/
+.loader {
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+.loader p {
+    font-size: 12px;
+    color: rgb(90,220,204);
+    font-weight: bold;
+	
+}
+
+.navbar-sudoku {
+    background-color: rgb(90,115,219);
+}
+
+.grid-border-top{
+	border-top: 0.3rem solid;
+}
+
+.grid-border-left{
+	border-left: 0.3rem solid;
+}
+
+.grid-border-bottom{
+	border-bottom: 0.3rem solid;
+}
+
+.grid-border-right{
+	border-right: 0.3rem solid;
+}
+
+td.grid-border-cell{
+	border-right: 0.3rem solid;
+	color:black;
+}
+
+.cell-result-found{
+	color:rgb(74,166,30);
+	font-weight:bold;
+}
+
+.cell-result-not-found{
+	color:rgb(95,65,89);
+	font-weight:bold;
+}
