@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>EncryptDecryptJavascriptProject</title>
+  <meta name="description" content="EncryptDecryptJavascriptProject">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="asset/logo.png">
+</head>
+
+<body>
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/crypto-js/crypto-js.js"></script>
+  <div class="container">
+    <h2>EncryptDecryptJavascriptProject</h2>
+    <div class="row">
+      <div class="col-25">
+        <label>Action</label>
+      </div>
+      <div class="col-75">
+        <select id="action" name="action" onchange="changeAction()">
+          <option value="encrypt">Encrypt</option>
+          <option value="decrypt">Decrypt</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>Question</label>
+      </div>
+      <div class="col-75">
+        <select id="question" name="question">
+          <option value="q1">your first car</option>
+          <option value="q2">your favorite pet</option>
+          <option value="q3">your favorite country for hollidays</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>Answer</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="answer" name="firstname" placeholder="Your answer..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>Password</label>
+      </div>
+      <div class="col-75">
+        <input type="password" id="password" name="password" required placeholder="Your password..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>Text to Encrypt</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <button id="runEncryption" onclick="runEncryption()">Encrypt</button>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>Result</label>
+      </div>
+      <div class="col-75">
+        <textarea id="result" name="subject" style="height:200px" disabled></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <button onclick="copyResult()">Copy Result</button>
+    </div>
+  </div>
+</body>
+
+</html>
